@@ -80,7 +80,7 @@ FAmount = len(FinalPasswds)
 
 def encFunc():
   OutNum = ''.join(finalNum) #converting list into string
-  remove(OutNum)
+  
   FinalPasswds.append(OutNum)
   EncOutNum = hashlib.md5(OutNum.encode())
   predOut = ''.join(predResFin)
@@ -104,7 +104,7 @@ def encFunc():
   
 def DcFunc():
   OutNum = ''.join(finalNum) #converting list into string
-  remove(OutNum)
+  
   FinalPasswds.append(OutNum)
   EncOutNum = hashlib.md5(OutNum.encode())
   predOut = ''.join(predResFin)
